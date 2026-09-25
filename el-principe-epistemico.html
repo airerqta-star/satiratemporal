@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>El Príncipe epistémico — Manual para destruir el capital epistémico</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Public+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap">
+<style>
+:root{
+  --papel:#eef0e8;
+  --papel2:#e2e6da;
+  --tinta:#1b2330;
+  --gris:#5f665c;
+  --violeta:#5e3a87;
+  --rojo:#a8322a;
+  --linea:#c4c9bb;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--papel);color:var(--tinta);
+  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:18px;line-height:1.6;
+}
+main{max-width:720px;margin:0 auto;padding:56px 24px 96px}
+h1,h2,h3{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;line-height:1.1;margin:0}
+h1{font-size:clamp(46px,9vw,84px);font-weight:700;letter-spacing:-.5px}
+h2{font-size:clamp(32px,5.5vw,44px);font-weight:700;margin-top:72px;margin-bottom:18px}
+h3{font-size:28px;font-weight:600;margin-top:40px;margin-bottom:6px}
+p{margin:0 0 16px}
+.bajada{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(24px,4vw,30px);line-height:1.25;margin:18px 0 24px;color:var(--gris)}
+.origen{font-size:15px;color:var(--gris);border-left:3px solid var(--linea);padding-left:14px}
+.cabecera{position:relative;padding-top:10px}
+.sello{position:absolute;right:-6px;top:-18px;width:170px;transform:rotate(-11deg);opacity:.88}
+.art{border-top:1px solid var(--linea);padding-top:22px;margin-top:34px}
+.art .num{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:20px;color:var(--violeta)}
+.para{margin:10px 0 0;padding:12px 16px;background:var(--papel2);border-radius:4px;font-size:16.5px}
+.para strong{color:var(--violeta)}
+.cita{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;line-height:1.3;font-style:italic;margin:26px 0;padding-left:20px;border-left:3px solid var(--violeta)}
+.cita small{display:block;font-family:"Public Sans",sans-serif;font-style:normal;font-size:14px;color:var(--gris);margin-top:6px}
+figure{margin:34px 0}
+figure svg{width:100%;height:auto;display:block}
+figcaption{font-size:14px;color:var(--gris);margin-top:8px}
+.tabla{overflow-x:auto;margin:20px 0}
+table{border-collapse:collapse;width:100%;min-width:520px;font-size:16px}
+th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--linea);vertical-align:top}
+th{font-weight:800;font-size:14px;color:var(--gris)}
+td:first-child{font-weight:600;white-space:nowrap}
+.tachado{text-decoration:line-through;text-decoration-color:var(--rojo);text-decoration-thickness:2px;color:var(--gris)}
+ul.sab{padding-left:20px}
+ul.sab li{margin-bottom:8px}
+.regla{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(26px,4.5vw,34px);line-height:1.25;font-weight:600;margin:24px 0;color:var(--rojo)}
+.fuentes{font-size:15px;color:var(--gris)}
+.fuentes li{margin-bottom:6px}
+.cierre{margin-top:72px;border-top:3px double var(--tinta);padding-top:26px}
+a{color:var(--violeta)}
+a:focus-visible{outline:2px solid var(--violeta);outline-offset:2px}
+@media (max-width:560px){.sello{width:118px;right:-4px;top:-26px}}
+</style>
+</head>
+<body>
+<main>
+
+<header class="cabecera">
+<svg class="sello" viewBox="0 0 200 200" role="img" aria-label="Sello violeta: reservado, solo para jefes">
+  <circle cx="100" cy="100" r="92" fill="none" stroke="#5e3a87" stroke-width="6"/>
+  <circle cx="100" cy="100" r="78" fill="none" stroke="#5e3a87" stroke-width="2"/>
+  <text x="100" y="92" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="24" fill="#5e3a87">RESERVADO</text>
+  <text x="100" y="118" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="600" font-size="15" fill="#5e3a87">solo para jefes</text>
+  <text x="100" y="140" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="12" fill="#5e3a87">no circular</text>
+</svg>
+<h1>El Príncipe epistémico</h1>
+<p class="bajada">Manual práctico para destruir el capital epistémico de su organización, y por qué le conviene hacerlo.</p>
+<p class="origen">Versión invertida del trabajo <em>Capital epistémico y jerarquía del conocimiento en las organizaciones</em>. Cada recomendación del original se aplica aquí al revés, con su fundamento. Es sátira: léase como se lee a Maquiavelo, sabiendo que el que describe el veneno también enseña a reconocerlo.</p>
+</header>
+
+<h2>Proemio</h2>
+<p>El original sostiene que una organización debe saber quién sabe qué. Usted, que dirige, sabe algo más útil: <strong>una organización que sabe quién sabe qué ya no necesita tanto de usted.</strong></p>
+<p>Maquiavelo advirtió que la primera opinión que se forma sobre la inteligencia de un señor surge de mirar a los hombres que tiene alrededor. La conclusión obvia sería rodearse de capaces. La conclusión práctica es otra: si todos alrededor parecen iguales, nadie puede comparar. Y lo que no se compara, no se juzga.</p>
+<p>Robert Greene lo resumió en su primera ley del poder: nunca eclipse al amo. Este manual la da vuelta para el que ya es amo: asegúrese de que nadie tenga con qué eclipsarlo.</p>
+
+<figure>
+<svg viewBox="0 0 680 400" role="img" aria-label="Dos pirámides: a la izquierda la pirámide del conocimiento real, con los expertos arriba; a la derecha la pirámide del Príncipe, invertida, con el expositor sin experiencia en el vértice que sostiene todo">
+  <text x="170" y="30" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="16" fill="#5f665c">Lo que el original recomienda</text>
+  <polygon points="170,60 300,340 40,340" fill="#e2e6da" stroke="#1b2330" stroke-width="2"/>
+  <line x1="97" y1="220" x2="243" y2="220" stroke="#1b2330" stroke-width="1.5"/>
+  <line x1="130" y1="147" x2="210" y2="147" stroke="#1b2330" stroke-width="1.5"/>
+  <text x="170" y="130" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">expertos</text>
+  <text x="170" y="192" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">especializados</text>
+  <text x="170" y="290" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">en formación</text>
+  <text x="170" y="372" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">estable: se apoya en la base</text>
+
+  <text x="510" y="30" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="16" fill="#a8322a">Lo que el Príncipe aplica</text>
+  <polygon points="380,60 640,60 510,340" fill="#e2e6da" stroke="#a8322a" stroke-width="2"/>
+  <line x1="417" y1="140" x2="603" y2="140" stroke="#a8322a" stroke-width="1.5"/>
+  <line x1="453" y1="220" x2="567" y2="220" stroke="#a8322a" stroke-width="1.5"/>
+  <text x="510" y="106" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">veinte directores escuchando</text>
+  <text x="510" y="186" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">asesoras externas</text>
+  <text x="510" y="270" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">expositor</text>
+  <circle cx="510" cy="340" r="7" fill="#a8322a"/>
+  <text x="510" y="372" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#a8322a">todo se sostiene en un punto</text>
+</svg>
+<figcaption>La inversión de la posición epistémica: el original la describe como un daño; el Príncipe, como un diseño.</figcaption>
+</figure>
+
+<h2>Para qué le sirve destruirlo</h2>
+<p>Antes de los métodos, los motivos. Nadie destruye un activo sin una razón, y estas son las del Príncipe:</p>
+<h3>Nadie lo contradice</h3>
+<p>El experto es la única persona de la organización que puede decirle, con fundamento, que usted está equivocado. Elimine el fundamento y le queda solo la opinión, que se discute, se posterga y se olvida.</p>
+<h3>Todos son intercambiables, y lo intercambiable obedece</h3>
+<p>Si cualquiera puede ocupar cualquier lugar, nadie es indispensable. Y quien no es indispensable no negocia. Maquiavelo dijo que es más seguro ser temido que amado; el Príncipe epistémico agrega que es más seguro ser necesario que respetado.</p>
+<h3>La autoridad pasa a ser visibilidad, y la visibilidad la reparte usted</h3>
+<p>El saber no se puede asignar por decreto. La tribuna, el micrófono y el flyer sí. Si logra que la organización confunda una cosa con la otra, usted decide quién "sabe".</p>
+<h3>Las planillas lucen</h3>
+<p>Cien asistentes a una capacitación es un número. Lo aprendido no. Es la ley de Goodhart a su favor: cuando una medida se vuelve objetivo, deja de medir lo que medía, pero sigue quedando muy bien en el informe anual.</p>
+<h3>Si nadie sabe quién sabe, todos le preguntan a usted</h3>
+<p>Un buen mapa del conocimiento permite ir directo al que sabe. Sin mapa, todas las consultas suben por el organigrama. Hasta su despacho.</p>
+
+<h2>Reglamento de demolición</h2>
+<p>El original enumera nueve daños al capital epistémico. Aquí se reglamentan como procedimiento.</p>
+
+<div class="art">
+<div class="num">Artículo 1°</div>
+<h3>Invisibilice al experto</h3>
+<p>Incorpórelo a la categoría universal de "personal a capacitar". No distinga entre quien necesita aprender y quien solo necesita una actualización: esa distinción es el primer reconocimiento, y el reconocimiento es el primer paso hacia el poder.</p>
+<p class="para"><strong>Para qué:</strong> un experto visible es un poder alternativo dentro de su propio organigrama. Uno invisible es un asistente más.</p>
+</div>
+
+<div class="art">
+<div class="num">Artículo 2°</div>
+<h3>Erosione por goteo</h3>
+<p>Nunca humille de una vez: eso genera reacción. Una capacitación. Otra. Una reunión. Otro comité. Siempre el mismo esquema: profesional en la silla, menos especializado al frente. El original advierte que la normalización es el verdadero riesgo. Para usted es el verdadero método.</p>
+<p class="para"><strong>Para qué:</strong> lo que ocurre de a poco no se denuncia. Cuando alguien quiera quejarse, ya será "la forma en que siempre se hizo".</p>
+</div>
+
+<figure>
+<svg viewBox="0 0 680 300" role="img" aria-label="Gráfico de línea descendente: el reconocimiento del experto cae con cada capacitación indiferenciada, hasta quedar en el piso, donde dice normalizado">
+  <line x1="60" y1="250" x2="650" y2="250" stroke="#1b2330" stroke-width="2"/>
+  <line x1="60" y1="30" x2="60" y2="250" stroke="#1b2330" stroke-width="2"/>
+  <text x="70" y="24" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">reconocimiento del experto</text>
+  <text x="648" y="275" text-anchor="end" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">capacitaciones obligatorias</text>
+  <polyline points="70,50 150,70 230,98 310,128 390,160 470,192 550,222 640,240" fill="none" stroke="#5e3a87" stroke-width="4" stroke-linejoin="round"/>
+  <g fill="#5e3a87">
+    <circle cx="150" cy="70" r="6"/><circle cx="230" cy="98" r="6"/><circle cx="310" cy="128" r="6"/><circle cx="390" cy="160" r="6"/><circle cx="470" cy="192" r="6"/><circle cx="550" cy="222" r="6"/>
+  </g>
+  <text x="158" y="60" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">costos</text>
+  <text x="238" y="88" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">liderazgo</text>
+  <text x="318" y="118" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">autosuma</text>
+  <text x="398" y="150" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">pestañas</text>
+  <text x="478" y="182" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">Zoom n° 7</text>
+  <text x="600" y="232" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="13" fill="#a8322a">normalizado</text>
+</svg>
+<figcaption>Ninguna capacitación por sí sola humilla a nadie. La suma es el método.</figcaption>
+</figure>
+
+<div class="art">
+<div class="num">Artículo 3°</div>
+<h3>Confunda visibilidad con expertise</h3>
+<p>Premie al que arma buenas presentaciones, al que está disponible, al que está cerca del despacho. El original lista esos criterios como desviaciones peligrosas: antigüedad, cargo, proximidad, facilidad para el power point. Úselos como escalafón.</p>
+<p class="para"><strong>Para qué:</strong> la competencia no depende de usted. La proximidad, sí.</p>
+</div>
+
+<div class="art">
+<div class="num">Artículo 4°</div>
+<h3>Consiga el silencio</h3>
+<p>Cuando el profesional perciba que su saber no cambia nada, dejará de intervenir, de observar, de proponer y de advertir errores. Se limitará a cumplir. El original lo llama pérdida silenciosa de capital; usted lo llama paz institucional.</p>
+<p class="para"><strong>Para qué:</strong> el error que nadie advierte no existe. Al menos hasta que llega el Tribunal de Cuentas.</p>
+</div>
+
+<div class="art">
+<div class="num">Artículo 5°</div>
+<h3>Invierta en lo que ya se sabe</h3>
+<p>Capacite a quien domina el contenido. Cuente horas, salas, café, asesoras, viáticos. El original lo califica como actividad administrativa de bajo rendimiento epistemológico. Para usted es ejecución presupuestaria de alto rendimiento estadístico.</p>
+<p class="para"><strong>Para qué:</strong> nadie audita lo aprendido. Se audita lo gastado, y eso quedó impecable.</p>
+</div>
+
+<div class="art">
+<div class="num">Artículo 6°</div>
+<h3>Desmotive con método</h3>
+<p>Transmita, sin decirlo nunca, el mensaje que el original teme: tu experiencia no modifica la forma en que te consideramos. Trate igual al que llegó ayer y al que sostiene el área hace quince años.</p>
+<p class="para"><strong>Para qué:</strong> el motivado propone, y el que propone cambia cosas. El desmotivado firma y se va a su casa a horario.</p>
+</div>
+
+<div class="art">
+<div class="num">Artículo 7°</div>
+<h3>Funda quién manda con quién sabe</h3>
+<p>Este es el artículo central. El original insiste en que la autoridad para organizar una actividad no da autoridad para enseñar su contenido. Usted debe sostener lo contrario: si organizo, sé; si firmo, entiendo; si convoco, tengo razón.</p>
+<p class="para"><strong>Para qué:</strong> una vez fusionadas, cualquier objeción técnica se vuelve insubordinación. Y la insubordinación sí se sanciona.</p>
+</div>
+
+<blockquote class="cita">Un príncipe que no es sabio por sí mismo no puede ser bien aconsejado.<small>Maquiavelo, El Príncipe, cap. XXIII. El Príncipe epistémico lo resuelve eliminando a los consejeros.</small></blockquote>
+
+<div class="art">
+<div class="num">Artículo 8°</div>
+<h3>Adiestre la escucha</h3>
+<p>Siente siempre al experto del lado del público. Con el tiempo, aprenderá a escuchar antes que a aportar. El original lo llama debilitamiento de la capacidad crítica. Usted, cultura organizacional.</p>
+<p class="para"><strong>Para qué:</strong> Miranda Fricker describió la injusticia testimonial, restarle credibilidad a alguien por lo que es y no por lo que dice. Aplicada con constancia, ahorra muchas discusiones.</p>
+</div>
+
+<div class="art">
+<div class="num">Artículo 9°</div>
+<h3>Borre el mapa, conserve el organigrama</h3>
+<p>Que la organización sepa perfectamente quién depende de quién y no tenga idea de quién sabe de qué. A la pregunta "¿quién sabe de esto?" debe responderse siempre "¿quién está a cargo?".</p>
+<p class="para"><strong>Para qué:</strong> el organigrama lo dibuja usted. El mapa del conocimiento se dibuja solo, y por eso es peligroso.</p>
+</div>
+
+<figure>
+<svg viewBox="0 0 680 320" role="img" aria-label="A la izquierda un organigrama completo y ordenado; a la derecha el mapa de quién sabe qué, lleno de signos de pregunta">
+  <text x="170" y="26" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="15" fill="#1b2330">Organigrama: impecable</text>
+  <g fill="#e2e6da" stroke="#1b2330" stroke-width="2">
+    <rect x="130" y="44" width="80" height="36" rx="3"/>
+    <rect x="40" y="130" width="80" height="36" rx="3"/><rect x="130" y="130" width="80" height="36" rx="3"/><rect x="220" y="130" width="80" height="36" rx="3"/>
+    <rect x="40" y="216" width="80" height="36" rx="3"/><rect x="130" y="216" width="80" height="36" rx="3"/><rect x="220" y="216" width="80" height="36" rx="3"/>
+  </g>
+  <g stroke="#1b2330" stroke-width="2" fill="none">
+    <path d="M170 80 V105 M80 105 H260 M80 105 V130 M170 105 V130 M260 105 V130"/>
+    <path d="M80 166 V216 M170 166 V216 M260 166 V216"/>
+  </g>
+  <text x="170" y="67" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="13" fill="#5e3a87">Príncipe</text>
+
+  <text x="510" y="26" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="15" fill="#a8322a">Mapa de quién sabe qué</text>
+  <rect x="380" y="44" width="260" height="210" rx="4" fill="none" stroke="#a8322a" stroke-width="2" stroke-dasharray="8 6"/>
+  <g font-family="Cormorant Garamond, Georgia, serif" font-weight="700" fill="#a8322a">
+    <text x="420" y="110" font-size="44">?</text><text x="500" y="92" font-size="30">?</text><text x="580" y="126" font-size="40">?</text>
+    <text x="450" y="190" font-size="34">?</text><text x="540" y="210" font-size="48">?</text><text x="608" y="236" font-size="26">?</text>
+  </g>
+  <text x="510" y="290" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">todas las consultas suben al despacho</text>
+</svg>
+<figcaption>Una organización puede tener un excelente organigrama y un pésimo mapa epistemológico. El Príncipe se ocupa de que así sea.</figcaption>
+</figure>
+
+<h2>Política de capacitación indiferenciada</h2>
+<p>El original propone clasificar las actividades según destinatario y objetivo. El Príncipe usa la misma tabla, pero corregida.</p>
+<div class="tabla">
+<table>
+<thead><tr><th>Tipo de actividad</th><th>Lo que decía el original</th><th>Corrección del Príncipe</th></tr></thead>
+<tbody>
+<tr><td>Comunicación</td><td class="tachado">Informar al personal involucrado</td><td>Llámela capacitación y hágala obligatoria</td></tr>
+<tr><td>Inducción</td><td class="tachado">Para personal nuevo</td><td>Para todos, especialmente los de quince años de servicio</td></tr>
+<tr><td>Capacitación</td><td class="tachado">Para quien presenta brechas</td><td>Para quien no las presenta, así nadie reclama</td></tr>
+<tr><td>Actualización</td><td class="tachado">Incorporar novedades</td><td>Repasar lo de siempre con otro flyer</td></tr>
+<tr><td>Formación avanzada</td><td class="tachado">Profundizar expertise</td><td>Autosuma y cómo replicar pestañas</td></tr>
+<tr><td>Mesa técnica</td><td class="tachado">Intercambio entre expertos</td><td>Zoom con cámaras apagadas</td></tr>
+<tr><td>Consulta</td><td class="tachado">Usar la expertise existente</td><td>Contratar asesoras externas</td></tr>
+</tbody>
+</table>
+</div>
+
+<h2>La regla de no correspondencia</h2>
+<p>El original formula una regla de correspondencia entre la posición epistémica asignada y la expertise real. El Príncipe la reemplaza por esta:</p>
+<p class="regla">La posición de quien enseña se asigna por disponibilidad, cercanía o conveniencia. La de alumno, a todos los demás.</p>
+<p>Su ventaja es la simplicidad: no requiere evaluar a nadie, y por lo tanto nadie puede reclamar haber sido mal evaluado.</p>
+
+<h2>El Príncipe no está solo</h2>
+<p>Nada de esto es nuevo. Hay una tradición entera que ya lo escribió, casi siempre como advertencia, a veces como instrucción.</p>
+<h3>El manual de sabotaje de 1944</h3>
+<p>En plena Segunda Guerra, la OSS, antecesora de la CIA, redactó un <em>Simple Sabotage Field Manual</em> para que civiles en territorio ocupado entorpecieran organizaciones enemigas desde adentro. Entre sus consejos:</p>
+<ul class="sab">
+<li>Insistir en que todo pase por los canales correspondientes.</li>
+<li>Pronunciar discursos, lo más largos y frecuentes posible.</li>
+<li>Derivar todo a comisiones.</li>
+<li>Convocar reuniones cuando hay trabajo más urgente que hacer.</li>
+<li>Asignar las tareas importantes a los trabajadores menos eficientes.</li>
+<li>Ser amable con los ineficientes, promoverlos sin mérito y discriminar a los eficientes.</li>
+</ul>
+<p>El manual está desclasificado. Lo inquietante no es que exista, sino que muchas organizaciones lo aplican sin haberlo leído.</p>
+<h3>Cipolla y el bandido</h3>
+<p>Carlo Cipolla clasificó a las personas según el efecto de sus actos: el inteligente gana y hace ganar; el incauto pierde para que otro gane; el bandido gana haciendo perder; el estúpido hace perder a otros sin ganar nada. El Príncipe epistémico aspira a bandido. El riesgo, como advierte Cipolla, es que el estúpido abunda más de lo que uno cree, y a veces es el que organiza la charla.</p>
+<h3>Peter, Janis, Dunning y Kruger</h3>
+<p>Laurence Peter explicó cómo cada uno asciende hasta su nivel de incompetencia. Irving Janis describió el pensamiento grupal: grupos que deciden mal porque nadie se anima a disentir. Dunning y Kruger mostraron que quien menos sabe de un tema suele sobreestimar lo que sabe. Combinados, son la receta del Príncipe: promover hasta la incompetencia, silenciar el disenso y darle el micrófono a quien más seguro está.</p>
+
+<section class="cierre">
+<h2 style="margin-top:0">Contraindicaciones</h2>
+<p>Todo veneno tiene un efecto adverso, y este también. Una organización sin capital epistémico funciona perfectamente mientras no pase nada. El día que aparece un problema complejo de verdad, nadie sabe a quién consultar. Tampoco el Príncipe, que eliminó a los que sabían y se quedó solo con los que asentían.</p>
+<p>Ahí se cumple Maquiavelo al pie de la letra: el señor que no es sabio por sí mismo no puede ser bien aconsejado, porque ya no le queda nadie que sepa aconsejarlo.</p>
+<p>Por eso este manual se lee al revés. Cada artículo describe una práctica que ya existe, y el que la reconoce en su propia oficina tiene, por lo menos, el nombre exacto de lo que le está pasando.</p>
+<blockquote class="cita">Una institución puede conservar intacto su organigrama, su presupuesto y su cantidad de empleados, y aun así haber perdido la capacidad de reconocer dónde está el conocimiento que necesita para funcionar.<small>Paráfrasis de la conclusión del trabajo original, que el Príncipe no leyó.</small></blockquote>
+</section>
+
+<h2>Fuentes</h2>
+<ul class="fuentes">
+<li>Maquiavelo, N. <em>El Príncipe</em> (1532), caps. XVII, XXII y XXIII.</li>
+<li>Greene, R. <em>Las 48 leyes del poder</em> (1998), ley 1.</li>
+<li>Office of Strategic Services. <em>Simple Sabotage Field Manual</em> (1944), desclasificado.</li>
+<li>Cipolla, C. M. <em>Allegro ma non troppo</em> (1988), "Las leyes fundamentales de la estupidez humana".</li>
+<li>Peter, L. J. y Hull, R. <em>El principio de Peter</em> (1969).</li>
+<li>Janis, I. L. <em>Victims of Groupthink</em> (1972).</li>
+<li>Kruger, J. y Dunning, D. "Unskilled and Unaware of It", <em>Journal of Personality and Social Psychology</em> (1999).</li>
+<li>Fricker, M. <em>Epistemic Injustice</em> (2007).</li>
+<li>Zagzebski, L. <em>Epistemic Authority</em> (2012).</li>
+<li>Strathern, M. "Improving Ratings: Audit in the British University System" (1997), formulación difundida de la ley de Goodhart.</li>
+<li><em>Capital epistémico y jerarquía del conocimiento en las organizaciones</em>, texto de base de esta inversión.</li>
+</ul>
+
+</main>
+</body>
+</html>
