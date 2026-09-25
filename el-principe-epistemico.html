@@ -3,296 +3,214 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>El Príncipe epistémico — Manual para destruir el capital epistémico</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Public+Sans:ital,wght@0,400;0,600;0,800;1,400&display=swap">
+<title>El Príncipe epistémico — Cómo arruinar una organización en 9 cómodos pasos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Literata:ital,wght@0,400;0,600;1,400&display=swap">
 <style>
-:root{
-  --papel:#eef0e8;
-  --papel2:#e2e6da;
-  --tinta:#1b2330;
-  --gris:#5f665c;
-  --violeta:#5e3a87;
-  --rojo:#a8322a;
-  --linea:#c4c9bb;
-}
+:root{--cielo:#e6f2f1;--petroleo:#0f4c5c;--tomate:#e4572e;--mostaza:#f2b705;--violeta:#6a4c93;--verde:#3bb273;--tinta:#1d2430;--blanco:#ffffff}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{
-  margin:0;background:var(--papel);color:var(--tinta);
-  font-family:"Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
-  font-size:18px;line-height:1.6;
-}
-main{max-width:720px;margin:0 auto;padding:56px 24px 96px}
-h1,h2,h3{font-family:"Cormorant Garamond",Georgia,"Times New Roman",serif;line-height:1.1;margin:0}
-h1{font-size:clamp(46px,9vw,84px);font-weight:700;letter-spacing:-.5px}
-h2{font-size:clamp(32px,5.5vw,44px);font-weight:700;margin-top:72px;margin-bottom:18px}
-h3{font-size:28px;font-weight:600;margin-top:40px;margin-bottom:6px}
-p{margin:0 0 16px}
-.bajada{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(24px,4vw,30px);line-height:1.25;margin:18px 0 24px;color:var(--gris)}
-.origen{font-size:15px;color:var(--gris);border-left:3px solid var(--linea);padding-left:14px}
-.cabecera{position:relative;padding-top:10px}
-.sello{position:absolute;right:-6px;top:-18px;width:170px;transform:rotate(-11deg);opacity:.88}
-.art{border-top:1px solid var(--linea);padding-top:22px;margin-top:34px}
-.art .num{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:20px;color:var(--violeta)}
-.para{margin:10px 0 0;padding:12px 16px;background:var(--papel2);border-radius:4px;font-size:16.5px}
-.para strong{color:var(--violeta)}
-.cita{font-family:"Cormorant Garamond",Georgia,serif;font-size:25px;line-height:1.3;font-style:italic;margin:26px 0;padding-left:20px;border-left:3px solid var(--violeta)}
-.cita small{display:block;font-family:"Public Sans",sans-serif;font-style:normal;font-size:14px;color:var(--gris);margin-top:6px}
-figure{margin:34px 0}
+body{margin:0;background:var(--cielo);color:var(--tinta);font-family:Literata,Georgia,serif;font-size:18px;line-height:1.65}
+main{max-width:760px;margin:0 auto;padding:40px 22px 90px}
+h1,h2,h3,.bric{font-family:"Bricolage Grotesque",system-ui,sans-serif}
+h1{font-size:clamp(42px,8.5vw,76px);line-height:.98;font-weight:800;margin:10px 0 14px;color:var(--petroleo)}
+h2{font-size:clamp(30px,5vw,42px);line-height:1.05;font-weight:800;margin:64px 0 16px;color:var(--petroleo)}
+h3{font-size:24px;line-height:1.15;font-weight:800;margin:0 0 4px}
+p{margin:0 0 14px}
+.bajada{font-size:21px;font-style:italic;margin-bottom:26px}
+figure{margin:30px 0}
 figure svg{width:100%;height:auto;display:block}
-figcaption{font-size:14px;color:var(--gris);margin-top:8px}
-.tabla{overflow-x:auto;margin:20px 0}
-table{border-collapse:collapse;width:100%;min-width:520px;font-size:16px}
-th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--linea);vertical-align:top}
-th{font-weight:800;font-size:14px;color:var(--gris)}
-td:first-child{font-weight:600;white-space:nowrap}
-.tachado{text-decoration:line-through;text-decoration-color:var(--rojo);text-decoration-thickness:2px;color:var(--gris)}
-ul.sab{padding-left:20px}
-ul.sab li{margin-bottom:8px}
-.regla{font-family:"Cormorant Garamond",Georgia,serif;font-size:clamp(26px,4.5vw,34px);line-height:1.25;font-weight:600;margin:24px 0;color:var(--rojo)}
-.fuentes{font-size:15px;color:var(--gris)}
-.fuentes li{margin-bottom:6px}
-.cierre{margin-top:72px;border-top:3px double var(--tinta);padding-top:26px}
-a{color:var(--violeta)}
-a:focus-visible{outline:2px solid var(--violeta);outline-offset:2px}
-@media (max-width:560px){.sello{width:118px;right:-4px;top:-26px}}
+figcaption{font-size:14.5px;font-style:italic;color:#4a5560;margin-top:8px;text-align:center}
+.beneficios{display:grid;gap:12px;margin:18px 0}
+.beneficio{background:var(--blanco);border-left:8px solid var(--mostaza);padding:12px 16px;border-radius:0 10px 10px 0}
+.paso{display:grid;grid-template-columns:72px minmax(0,1fr);gap:16px;align-items:start;background:var(--blanco);border-radius:16px;padding:18px 18px 16px;margin:16px 0;box-shadow:0 3px 0 var(--petroleo)}
+.paso svg{width:72px;height:72px}
+.paso .n{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;color:var(--tomate);font-size:15px}
+.paso .ben{font-size:16px;color:var(--violeta);font-weight:600;margin:6px 0 0}
+.tabla{overflow-x:auto;margin:14px 0}
+table{border-collapse:separate;border-spacing:0;width:100%;min-width:480px;background:var(--blanco);border-radius:14px;overflow:hidden;font-size:16px}
+th{background:var(--petroleo);color:var(--blanco);text-align:left;padding:10px 14px;font-family:"Bricolage Grotesque",sans-serif}
+td{padding:10px 14px;border-top:1px solid #d7e4e3}
+td s{color:#8a939b;text-decoration-color:var(--tomate);text-decoration-thickness:2px}
+.regla{background:var(--tomate);color:var(--blanco);font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:clamp(24px,4.2vw,32px);line-height:1.15;padding:26px 28px;border-radius:18px;transform:rotate(-1deg);margin:22px 0}
+.cita{border-left:6px solid var(--violeta);padding:6px 0 6px 18px;font-style:italic;font-size:21px;margin:22px 0}
+.cita small{display:block;font-style:normal;font-size:14px;color:#4a5560;margin-top:4px}
+.aviso{background:var(--mostaza);border-radius:18px;padding:22px 24px;margin-top:60px}
+.aviso h2{margin-top:0;color:var(--tinta)}
+.fuentes{font-size:14px;color:#4a5560;margin-top:40px}
 </style>
 </head>
 <body>
 <main>
 
-<header class="cabecera">
-<svg class="sello" viewBox="0 0 200 200" role="img" aria-label="Sello violeta: reservado, solo para jefes">
-  <circle cx="100" cy="100" r="92" fill="none" stroke="#5e3a87" stroke-width="6"/>
-  <circle cx="100" cy="100" r="78" fill="none" stroke="#5e3a87" stroke-width="2"/>
-  <text x="100" y="92" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="24" fill="#5e3a87">RESERVADO</text>
-  <text x="100" y="118" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="600" font-size="15" fill="#5e3a87">solo para jefes</text>
-  <text x="100" y="140" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="12" fill="#5e3a87">no circular</text>
-</svg>
-<h1>El Príncipe epistémico</h1>
-<p class="bajada">Manual práctico para destruir el capital epistémico de su organización, y por qué le conviene hacerlo.</p>
-<p class="origen">Versión invertida del trabajo <em>Capital epistémico y jerarquía del conocimiento en las organizaciones</em>. Cada recomendación del original se aplica aquí al revés, con su fundamento. Es sátira: léase como se lee a Maquiavelo, sabiendo que el que describe el veneno también enseña a reconocerlo.</p>
-</header>
-
-<h2>Proemio</h2>
-<p>El original sostiene que una organización debe saber quién sabe qué. Usted, que dirige, sabe algo más útil: <strong>una organización que sabe quién sabe qué ya no necesita tanto de usted.</strong></p>
-<p>Maquiavelo advirtió que la primera opinión que se forma sobre la inteligencia de un señor surge de mirar a los hombres que tiene alrededor. La conclusión obvia sería rodearse de capaces. La conclusión práctica es otra: si todos alrededor parecen iguales, nadie puede comparar. Y lo que no se compara, no se juzga.</p>
-<p>Robert Greene lo resumió en su primera ley del poder: nunca eclipse al amo. Este manual la da vuelta para el que ya es amo: asegúrese de que nadie tenga con qué eclipsarlo.</p>
-
-<figure>
-<svg viewBox="0 0 680 400" role="img" aria-label="Dos pirámides: a la izquierda la pirámide del conocimiento real, con los expertos arriba; a la derecha la pirámide del Príncipe, invertida, con el expositor sin experiencia en el vértice que sostiene todo">
-  <text x="170" y="30" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="16" fill="#5f665c">Lo que el original recomienda</text>
-  <polygon points="170,60 300,340 40,340" fill="#e2e6da" stroke="#1b2330" stroke-width="2"/>
-  <line x1="97" y1="220" x2="243" y2="220" stroke="#1b2330" stroke-width="1.5"/>
-  <line x1="130" y1="147" x2="210" y2="147" stroke="#1b2330" stroke-width="1.5"/>
-  <text x="170" y="130" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">expertos</text>
-  <text x="170" y="192" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">especializados</text>
-  <text x="170" y="290" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">en formación</text>
-  <text x="170" y="372" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">estable: se apoya en la base</text>
-
-  <text x="510" y="30" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="16" fill="#a8322a">Lo que el Príncipe aplica</text>
-  <polygon points="380,60 640,60 510,340" fill="#e2e6da" stroke="#a8322a" stroke-width="2"/>
-  <line x1="417" y1="140" x2="603" y2="140" stroke="#a8322a" stroke-width="1.5"/>
-  <line x1="453" y1="220" x2="567" y2="220" stroke="#a8322a" stroke-width="1.5"/>
-  <text x="510" y="106" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">veinte directores escuchando</text>
-  <text x="510" y="186" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">asesoras externas</text>
-  <text x="510" y="270" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#1b2330">expositor</text>
-  <circle cx="510" cy="340" r="7" fill="#a8322a"/>
-  <text x="510" y="372" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#a8322a">todo se sostiene en un punto</text>
-</svg>
-<figcaption>La inversión de la posición epistémica: el original la describe como un daño; el Príncipe, como un diseño.</figcaption>
-</figure>
-
-<h2>Para qué le sirve destruirlo</h2>
-<p>Antes de los métodos, los motivos. Nadie destruye un activo sin una razón, y estas son las del Príncipe:</p>
-<h3>Nadie lo contradice</h3>
-<p>El experto es la única persona de la organización que puede decirle, con fundamento, que usted está equivocado. Elimine el fundamento y le queda solo la opinión, que se discute, se posterga y se olvida.</p>
-<h3>Todos son intercambiables, y lo intercambiable obedece</h3>
-<p>Si cualquiera puede ocupar cualquier lugar, nadie es indispensable. Y quien no es indispensable no negocia. Maquiavelo dijo que es más seguro ser temido que amado; el Príncipe epistémico agrega que es más seguro ser necesario que respetado.</p>
-<h3>La autoridad pasa a ser visibilidad, y la visibilidad la reparte usted</h3>
-<p>El saber no se puede asignar por decreto. La tribuna, el micrófono y el flyer sí. Si logra que la organización confunda una cosa con la otra, usted decide quién "sabe".</p>
-<h3>Las planillas lucen</h3>
-<p>Cien asistentes a una capacitación es un número. Lo aprendido no. Es la ley de Goodhart a su favor: cuando una medida se vuelve objetivo, deja de medir lo que medía, pero sigue quedando muy bien en el informe anual.</p>
-<h3>Si nadie sabe quién sabe, todos le preguntan a usted</h3>
-<p>Un buen mapa del conocimiento permite ir directo al que sabe. Sin mapa, todas las consultas suben por el organigrama. Hasta su despacho.</p>
-
-<h2>Reglamento de demolición</h2>
-<p>El original enumera nueve daños al capital epistémico. Aquí se reglamentan como procedimiento.</p>
-
-<div class="art">
-<div class="num">Artículo 1°</div>
-<h3>Invisibilice al experto</h3>
-<p>Incorpórelo a la categoría universal de "personal a capacitar". No distinga entre quien necesita aprender y quien solo necesita una actualización: esa distinción es el primer reconocimiento, y el reconocimiento es el primer paso hacia el poder.</p>
-<p class="para"><strong>Para qué:</strong> un experto visible es un poder alternativo dentro de su propio organigrama. Uno invisible es un asistente más.</p>
-</div>
-
-<div class="art">
-<div class="num">Artículo 2°</div>
-<h3>Erosione por goteo</h3>
-<p>Nunca humille de una vez: eso genera reacción. Una capacitación. Otra. Una reunión. Otro comité. Siempre el mismo esquema: profesional en la silla, menos especializado al frente. El original advierte que la normalización es el verdadero riesgo. Para usted es el verdadero método.</p>
-<p class="para"><strong>Para qué:</strong> lo que ocurre de a poco no se denuncia. Cuando alguien quiera quejarse, ya será "la forma en que siempre se hizo".</p>
-</div>
-
-<figure>
-<svg viewBox="0 0 680 300" role="img" aria-label="Gráfico de línea descendente: el reconocimiento del experto cae con cada capacitación indiferenciada, hasta quedar en el piso, donde dice normalizado">
-  <line x1="60" y1="250" x2="650" y2="250" stroke="#1b2330" stroke-width="2"/>
-  <line x1="60" y1="30" x2="60" y2="250" stroke="#1b2330" stroke-width="2"/>
-  <text x="70" y="24" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">reconocimiento del experto</text>
-  <text x="648" y="275" text-anchor="end" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">capacitaciones obligatorias</text>
-  <polyline points="70,50 150,70 230,98 310,128 390,160 470,192 550,222 640,240" fill="none" stroke="#5e3a87" stroke-width="4" stroke-linejoin="round"/>
-  <g fill="#5e3a87">
-    <circle cx="150" cy="70" r="6"/><circle cx="230" cy="98" r="6"/><circle cx="310" cy="128" r="6"/><circle cx="390" cy="160" r="6"/><circle cx="470" cy="192" r="6"/><circle cx="550" cy="222" r="6"/>
+<svg viewBox="0 0 760 380" role="img" aria-label="Un jefe con corona sentado en un trono hecho de diapositivas y planillas de asistencia; abajo, veinte expertos dormidos en sillas; al costado un proyector que dice diapositiva 1 de 94">
+  <rect width="760" height="380" rx="22" fill="#0f4c5c"/>
+  <circle cx="640" cy="70" r="44" fill="#f2b705"/>
+  <g fill="#e6f2f1" opacity=".18"><circle cx="90" cy="60" r="3"/><circle cx="200" cy="40" r="2"/><circle cx="470" cy="50" r="3"/><circle cx="560" cy="130" r="2"/></g>
+  <g>
+    <rect x="300" y="210" width="160" height="26" rx="3" fill="#ffffff"/><rect x="292" y="236" width="176" height="26" rx="3" fill="#f2b705"/><rect x="284" y="262" width="192" height="26" rx="3" fill="#ffffff"/><rect x="276" y="288" width="208" height="26" rx="3" fill="#e4572e"/>
+    <text x="380" y="228" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="13" fill="#0f4c5c">PLANILLA DE ASISTENCIA</text>
+    <text x="380" y="254" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="13" fill="#1d2430">POWER POINT FINAL_v7</text>
+    <text x="380" y="280" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="13" fill="#0f4c5c">FLYER SIN EXPOSITOR</text>
+    <text x="380" y="306" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="13" fill="#ffffff">INFORME DE GESTIÓN</text>
   </g>
-  <text x="158" y="60" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">costos</text>
-  <text x="238" y="88" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">liderazgo</text>
-  <text x="318" y="118" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">autosuma</text>
-  <text x="398" y="150" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">pestañas</text>
-  <text x="478" y="182" font-family="Public Sans, sans-serif" font-size="12" fill="#1b2330">Zoom n° 7</text>
-  <text x="600" y="232" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="13" fill="#a8322a">normalizado</text>
+  <rect x="330" y="120" width="100" height="92" rx="10" fill="#6a4c93"/>
+  <rect x="316" y="92" width="128" height="30" rx="8" fill="#6a4c93"/>
+  <circle cx="380" cy="118" r="24" fill="#1d2430"/>
+  <path d="M348 212 Q350 150 380 146 Q410 150 412 212 Z" fill="#1d2430"/>
+  <path d="M358 94 L364 72 L372 88 L380 66 L388 88 L396 72 L402 94 Z" fill="#f2b705"/>
+  <path d="M412 170 L456 142" stroke="#1d2430" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="460" cy="139" r="7" fill="#1d2430"/>
+  <rect x="560" y="200" width="150" height="96" rx="6" fill="#ffffff"/>
+  <text x="635" y="238" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#0f4c5c">¿QUÉ ES</text>
+  <text x="635" y="258" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#0f4c5c">UN GASTO?</text>
+  <text x="635" y="282" text-anchor="middle" font-family="Literata,serif" font-size="11" fill="#4a5560">diapositiva 1 de 94</text>
+  <g>
+    <g fill="#e6f2f1"><circle cx="70" cy="300" r="17"/><circle cx="130" cy="306" r="17"/><circle cx="190" cy="300" r="17"/><circle cx="250" cy="306" r="17"/></g>
+    <g fill="#3bb273"><rect x="48" y="320" width="44" height="40" rx="8"/><rect x="108" y="326" width="44" height="34" rx="8"/><rect x="168" y="320" width="44" height="40" rx="8"/><rect x="228" y="326" width="44" height="34" rx="8"/></g>
+    <g font-family="Bricolage Grotesque,sans-serif" font-weight="800" fill="#f2b705"><text x="84" y="280" font-size="16">z</text><text x="94" y="268" font-size="20">Z</text><text x="202" y="282" font-size="16">z</text><text x="212" y="268" font-size="22">Z</text></g>
+    <text x="140" y="276" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="18" fill="#e4572e">?</text>
+    <text x="262" y="282" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="14" fill="#e6f2f1">20 años</text>
+  </g>
+  <text x="380" y="352" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#f2b705">Trono homologado. Financiado por el contribuyente.</text>
 </svg>
-<figcaption>Ninguna capacitación por sí sola humilla a nadie. La suma es el método.</figcaption>
-</figure>
 
-<div class="art">
-<div class="num">Artículo 3°</div>
-<h3>Confunda visibilidad con expertise</h3>
-<p>Premie al que arma buenas presentaciones, al que está disponible, al que está cerca del despacho. El original lista esos criterios como desviaciones peligrosas: antigüedad, cargo, proximidad, facilidad para el power point. Úselos como escalafón.</p>
-<p class="para"><strong>Para qué:</strong> la competencia no depende de usted. La proximidad, sí.</p>
+<h1>Cómo arruinar una organización en 9 cómodos pasos</h1>
+<p class="bajada">Manual de bolsillo del Príncipe epistémico. Versión invertida de <em>Capital epistémico y jerarquía del conocimiento</em>, para jefes que ya no quieren que nadie sepa más que ellos.</p>
+
+<h2>¿Por qué destruir el capital epistémico?</h2>
+<p>Porque el experto es la única persona de la oficina capaz de decirle que está equivocado, y encima con fundamento. Beneficios comprobados:</p>
+<div class="beneficios">
+<div class="beneficio"><strong>Nadie lo contradice.</strong> Sin fundamento, la objeción es solo una opinión. Y las opiniones se archivan.</div>
+<div class="beneficio"><strong>Todos son intercambiables.</strong> Y el que es intercambiable no negocia: firma.</div>
+<div class="beneficio"><strong>La autoridad la reparte usted.</strong> El saber no se decreta; el micrófono, sí.</div>
+<div class="beneficio"><strong>Las planillas lucen.</strong> Cien asistentes es un número. Lo aprendido, no. Goodhart aplaude.</div>
+<div class="beneficio"><strong>Todas las consultas suben a su despacho.</strong> Si nadie sabe quién sabe, el único que "sabe" es el que firma.</div>
 </div>
 
-<div class="art">
-<div class="num">Artículo 4°</div>
-<h3>Consiga el silencio</h3>
-<p>Cuando el profesional perciba que su saber no cambia nada, dejará de intervenir, de observar, de proponer y de advertir errores. Se limitará a cumplir. El original lo llama pérdida silenciosa de capital; usted lo llama paz institucional.</p>
-<p class="para"><strong>Para qué:</strong> el error que nadie advierte no existe. Al menos hasta que llega el Tribunal de Cuentas.</p>
+<h2>Los 9 cómodos pasos</h2>
+
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><circle cx="36" cy="28" r="11" fill="#1d2430" opacity=".25"/><path d="M16 60 Q18 42 36 42 Q54 42 56 60 Z" fill="#1d2430" opacity=".25"/><path d="M12 12 L60 60" stroke="#e4572e" stroke-width="6" stroke-linecap="round"/></svg>
+<div><div class="n">Paso 1</div><h3>Vuelva invisible al experto</h3><p>Métalo en la bolsa de "personal a capacitar", junto al que entró el lunes.</p><p class="ben">Un experto visible es un poder alternativo. Uno invisible, una silla ocupada.</p></div>
 </div>
 
-<div class="art">
-<div class="num">Artículo 5°</div>
-<h3>Invierta en lo que ya se sabe</h3>
-<p>Capacite a quien domina el contenido. Cuente horas, salas, café, asesoras, viáticos. El original lo califica como actividad administrativa de bajo rendimiento epistemológico. Para usted es ejecución presupuestaria de alto rendimiento estadístico.</p>
-<p class="para"><strong>Para qué:</strong> nadie audita lo aprendido. Se audita lo gastado, y eso quedó impecable.</p>
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><path d="M36 10 C44 22 44 26 36 30 C28 26 28 22 36 10 Z" fill="#0f4c5c"/><path d="M36 36 C42 45 42 48 36 51 C30 48 30 45 36 36 Z" fill="#0f4c5c"/><rect x="18" y="56" width="36" height="8" rx="3" fill="#6a4c93"/></svg>
+<div><div class="n">Paso 2</div><h3>Humille por goteo</h3><p>Nunca de golpe. Una charla, otra, un Zoom, un comité. Siempre el experto en la silla y el novato al frente.</p><p class="ben">Lo que ocurre de a poco no se denuncia: se llama "siempre se hizo así".</p></div>
 </div>
 
-<div class="art">
-<div class="num">Artículo 6°</div>
-<h3>Desmotive con método</h3>
-<p>Transmita, sin decirlo nunca, el mensaje que el original teme: tu experiencia no modifica la forma en que te consideramos. Trate igual al que llegó ayer y al que sostiene el área hace quince años.</p>
-<p class="para"><strong>Para qué:</strong> el motivado propone, y el que propone cambia cosas. El desmotivado firma y se va a su casa a horario.</p>
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><rect x="14" y="16" width="44" height="30" rx="4" fill="#f2b705"/><path d="M22 38 L30 28 L38 34 L50 22" stroke="#1d2430" stroke-width="4" fill="none" stroke-linecap="round"/><rect x="33" y="46" width="6" height="12" fill="#1d2430"/><rect x="24" y="58" width="24" height="4" rx="2" fill="#1d2430"/></svg>
+<div><div class="n">Paso 3</div><h3>Premie el power point, no el criterio</h3><p>Ascienda al que tiene lindas diapositivas, al que está disponible y al que se sienta cerca de su despacho.</p><p class="ben">La competencia no depende de usted. La proximidad, sí.</p></div>
 </div>
 
-<div class="art">
-<div class="num">Artículo 7°</div>
-<h3>Funda quién manda con quién sabe</h3>
-<p>Este es el artículo central. El original insiste en que la autoridad para organizar una actividad no da autoridad para enseñar su contenido. Usted debe sostener lo contrario: si organizo, sé; si firmo, entiendo; si convoco, tengo razón.</p>
-<p class="para"><strong>Para qué:</strong> una vez fusionadas, cualquier objeción técnica se vuelve insubordinación. Y la insubordinación sí se sanciona.</p>
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><circle cx="36" cy="36" r="18" fill="#1d2430" opacity=".2"/><rect x="18" y="32" width="36" height="9" rx="4" fill="#e4572e"/><circle cx="29" cy="30" r="2.5" fill="#1d2430"/><circle cx="43" cy="30" r="2.5" fill="#1d2430"/></svg>
+<div><div class="n">Paso 4</div><h3>Consiga el silencio</h3><p>Cuando el profesional note que opinar no cambia nada, dejará de advertir errores. Usted lo llamará paz institucional.</p><p class="ben">El error que nadie advierte no existe. Hasta que llega el Tribunal de Cuentas.</p></div>
 </div>
 
-<blockquote class="cita">Un príncipe que no es sabio por sí mismo no puede ser bien aconsejado.<small>Maquiavelo, El Príncipe, cap. XXIII. El Príncipe epistémico lo resuelve eliminando a los consejeros.</small></blockquote>
-
-<div class="art">
-<div class="num">Artículo 8°</div>
-<h3>Adiestre la escucha</h3>
-<p>Siente siempre al experto del lado del público. Con el tiempo, aprenderá a escuchar antes que a aportar. El original lo llama debilitamiento de la capacidad crítica. Usted, cultura organizacional.</p>
-<p class="para"><strong>Para qué:</strong> Miranda Fricker describió la injusticia testimonial, restarle credibilidad a alguien por lo que es y no por lo que dice. Aplicada con constancia, ahorra muchas discusiones.</p>
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><rect x="16" y="22" width="40" height="30" rx="5" fill="#3bb273"/><circle cx="36" cy="37" r="8" fill="#e6f2f1"/><text x="36" y="42" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="13" fill="#3bb273">$</text><path d="M50 14 L62 8 M54 20 L66 18" stroke="#e4572e" stroke-width="4" stroke-linecap="round"/></svg>
+<div><div class="n">Paso 5</div><h3>Invierta en lo que ya se sabe</h3><p>Capacite en autosuma al que usaba Lotus 1-2-3. Contrate tres asesoras para un presupuesto que igual hará Hacienda.</p><p class="ben">Nadie audita lo aprendido. Se audita lo gastado, y quedó impecable.</p></div>
 </div>
 
-<div class="art">
-<div class="num">Artículo 9°</div>
-<h3>Borre el mapa, conserve el organigrama</h3>
-<p>Que la organización sepa perfectamente quién depende de quién y no tenga idea de quién sabe de qué. A la pregunta "¿quién sabe de esto?" debe responderse siempre "¿quién está a cargo?".</p>
-<p class="para"><strong>Para qué:</strong> el organigrama lo dibuja usted. El mapa del conocimiento se dibuja solo, y por eso es peligroso.</p>
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><rect x="26" y="14" width="20" height="40" rx="6" fill="#ffffff" stroke="#1d2430" stroke-width="3"/><rect x="29" y="44" width="14" height="7" rx="2" fill="#e4572e"/><circle cx="36" cy="58" r="7" fill="#e4572e"/></svg>
+<div><div class="n">Paso 6</div><h3>Desmotive con método</h3><p>Trate igual al que llegó ayer y al que sostiene el área hace quince años. Sin decirlo nunca: que se note solo.</p><p class="ben">El motivado propone cambios. El desmotivado firma y se va a horario.</p></div>
+</div>
+
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><path d="M20 30 L26 16 L32 26 L36 12 L40 26 L46 16 L52 30 Z" fill="#f2b705"/><rect x="20" y="30" width="32" height="6" fill="#f2b705"/><path d="M24 44 h24 M24 52 h24 M24 60 h16" stroke="#0f4c5c" stroke-width="4" stroke-linecap="round"/></svg>
+<div><div class="n">Paso 7</div><h3>Si manda, sabe</h3><p>El paso estrella. Si organizo, sé. Si firmo, entiendo. Si convoco, tengo razón.</p><p class="ben">Fusionadas ambas autoridades, toda objeción técnica pasa a ser insubordinación.</p></div>
+</div>
+
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><path d="M24 20 Q14 36 24 52 Q34 58 36 48 Q38 40 30 36 Q40 30 34 22 Q30 16 24 20 Z" fill="#6a4c93"/><path d="M48 28 Q54 36 48 44 M54 22 Q64 36 54 50" stroke="#6a4c93" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+<div><div class="n">Paso 8</div><h3>Entrénelos para escuchar</h3><p>Siempre del lado del público. Con los años, el experto aprenderá a escuchar antes que a aportar.</p><p class="ben">Fricker lo llamó injusticia testimonial. Usted, cultura organizacional.</p></div>
+</div>
+
+<div class="paso">
+<svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="34" fill="#e6f2f1"/><path d="M14 20 L28 14 L44 20 L58 14 L58 52 L44 58 L28 52 L14 58 Z" fill="#ffffff" stroke="#0f4c5c" stroke-width="3"/><text x="36" y="45" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="26" fill="#e4572e">?</text></svg>
+<div><div class="n">Paso 9</div><h3>Borre el mapa, conserve el organigrama</h3><p>A la pregunta "¿quién sabe de esto?" responda siempre "¿quién está a cargo?".</p><p class="ben">El organigrama lo dibuja usted. El mapa del conocimiento se dibuja solo, y eso es peligroso.</p></div>
 </div>
 
 <figure>
-<svg viewBox="0 0 680 320" role="img" aria-label="A la izquierda un organigrama completo y ordenado; a la derecha el mapa de quién sabe qué, lleno de signos de pregunta">
-  <text x="170" y="26" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="15" fill="#1b2330">Organigrama: impecable</text>
-  <g fill="#e2e6da" stroke="#1b2330" stroke-width="2">
-    <rect x="130" y="44" width="80" height="36" rx="3"/>
-    <rect x="40" y="130" width="80" height="36" rx="3"/><rect x="130" y="130" width="80" height="36" rx="3"/><rect x="220" y="130" width="80" height="36" rx="3"/>
-    <rect x="40" y="216" width="80" height="36" rx="3"/><rect x="130" y="216" width="80" height="36" rx="3"/><rect x="220" y="216" width="80" height="36" rx="3"/>
+<svg viewBox="0 0 760 330" role="img" aria-label="Un velocímetro del capital epistémico con la aguja en cero, marcado como objetivo cumplido">
+  <rect width="760" height="330" rx="22" fill="#ffffff"/>
+  <path d="M170 250 A210 210 0 0 1 590 250" fill="none" stroke="#e6f2f1" stroke-width="44"/>
+  <path d="M170 250 A210 210 0 0 1 245 90" fill="none" stroke="#e4572e" stroke-width="44"/>
+  <path d="M245 90 A210 210 0 0 1 380 40" fill="none" stroke="#f2b705" stroke-width="44"/>
+  <path d="M380 40 A210 210 0 0 1 515 90" fill="none" stroke="#3bb273" stroke-width="44"/>
+  <path d="M515 90 A210 210 0 0 1 590 250" fill="none" stroke="#0f4c5c" stroke-width="44"/>
+  <g font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="14" fill="#1d2430">
+    <text x="140" y="282" text-anchor="middle">Asienten</text>
+    <text x="225" y="52" text-anchor="middle">Callan</text>
+    <text x="380" y="13" text-anchor="middle">Opinan</text>
+    <text x="545" y="52" text-anchor="middle">Proponen</text>
+    <text x="620" y="282" text-anchor="middle">Lo corrigen a usted</text>
   </g>
-  <g stroke="#1b2330" stroke-width="2" fill="none">
-    <path d="M170 80 V105 M80 105 H260 M80 105 V130 M170 105 V130 M260 105 V130"/>
-    <path d="M80 166 V216 M170 166 V216 M260 166 V216"/>
-  </g>
-  <text x="170" y="67" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="13" fill="#5e3a87">Príncipe</text>
-
-  <text x="510" y="26" text-anchor="middle" font-family="Public Sans, sans-serif" font-weight="800" font-size="15" fill="#a8322a">Mapa de quién sabe qué</text>
-  <rect x="380" y="44" width="260" height="210" rx="4" fill="none" stroke="#a8322a" stroke-width="2" stroke-dasharray="8 6"/>
-  <g font-family="Cormorant Garamond, Georgia, serif" font-weight="700" fill="#a8322a">
-    <text x="420" y="110" font-size="44">?</text><text x="500" y="92" font-size="30">?</text><text x="580" y="126" font-size="40">?</text>
-    <text x="450" y="190" font-size="34">?</text><text x="540" y="210" font-size="48">?</text><text x="608" y="236" font-size="26">?</text>
-  </g>
-  <text x="510" y="290" text-anchor="middle" font-family="Public Sans, sans-serif" font-size="13" fill="#5f665c">todas las consultas suben al despacho</text>
+  <line x1="380" y1="250" x2="200" y2="238" stroke="#1d2430" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="380" cy="250" r="18" fill="#1d2430"/>
+  <text x="380" y="320" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="20" fill="#e4572e">Capital epistémico: 0 — ¡objetivo cumplido!</text>
 </svg>
-<figcaption>Una organización puede tener un excelente organigrama y un pésimo mapa epistemológico. El Príncipe se ocupa de que así sea.</figcaption>
+<figcaption>Medidor oficial. Si la aguja pasa a "Proponen", convoque urgente a otra capacitación.</figcaption>
 </figure>
 
-<h2>Política de capacitación indiferenciada</h2>
-<p>El original propone clasificar las actividades según destinatario y objetivo. El Príncipe usa la misma tabla, pero corregida.</p>
+<h2>La tabla, corregida</h2>
 <div class="tabla">
 <table>
-<thead><tr><th>Tipo de actividad</th><th>Lo que decía el original</th><th>Corrección del Príncipe</th></tr></thead>
+<thead><tr><th>Actividad</th><th>El original decía</th><th>El Príncipe corrige</th></tr></thead>
 <tbody>
-<tr><td>Comunicación</td><td class="tachado">Informar al personal involucrado</td><td>Llámela capacitación y hágala obligatoria</td></tr>
-<tr><td>Inducción</td><td class="tachado">Para personal nuevo</td><td>Para todos, especialmente los de quince años de servicio</td></tr>
-<tr><td>Capacitación</td><td class="tachado">Para quien presenta brechas</td><td>Para quien no las presenta, así nadie reclama</td></tr>
-<tr><td>Actualización</td><td class="tachado">Incorporar novedades</td><td>Repasar lo de siempre con otro flyer</td></tr>
-<tr><td>Formación avanzada</td><td class="tachado">Profundizar expertise</td><td>Autosuma y cómo replicar pestañas</td></tr>
-<tr><td>Mesa técnica</td><td class="tachado">Intercambio entre expertos</td><td>Zoom con cámaras apagadas</td></tr>
-<tr><td>Consulta</td><td class="tachado">Usar la expertise existente</td><td>Contratar asesoras externas</td></tr>
+<tr><td>Comunicación</td><td><s>Informar</s></td><td>Llámela capacitación y hágala obligatoria</td></tr>
+<tr><td>Inducción</td><td><s>Para el personal nuevo</s></td><td>Para los de quince años de servicio</td></tr>
+<tr><td>Actualización</td><td><s>Incorporar novedades</s></td><td>Lo de siempre, con otro flyer</td></tr>
+<tr><td>Formación avanzada</td><td><s>Profundizar expertise</s></td><td>Autosuma y replicar pestañas</td></tr>
+<tr><td>Mesa técnica</td><td><s>Intercambio entre expertos</s></td><td>Zoom con las cámaras apagadas</td></tr>
+<tr><td>Consulta</td><td><s>Usar la expertise interna</s></td><td>Contratar asesoras en otra provincia</td></tr>
 </tbody>
 </table>
 </div>
 
-<h2>La regla de no correspondencia</h2>
-<p>El original formula una regla de correspondencia entre la posición epistémica asignada y la expertise real. El Príncipe la reemplaza por esta:</p>
-<p class="regla">La posición de quien enseña se asigna por disponibilidad, cercanía o conveniencia. La de alumno, a todos los demás.</p>
-<p>Su ventaja es la simplicidad: no requiere evaluar a nadie, y por lo tanto nadie puede reclamar haber sido mal evaluado.</p>
+<div class="regla">Regla de no correspondencia: enseña el que está disponible. Aprenden todos los demás. No hace falta evaluar a nadie, así nadie reclama.</div>
 
-<h2>El Príncipe no está solo</h2>
-<p>Nada de esto es nuevo. Hay una tradición entera que ya lo escribió, casi siempre como advertencia, a veces como instrucción.</p>
-<h3>El manual de sabotaje de 1944</h3>
-<p>En plena Segunda Guerra, la OSS, antecesora de la CIA, redactó un <em>Simple Sabotage Field Manual</em> para que civiles en territorio ocupado entorpecieran organizaciones enemigas desde adentro. Entre sus consejos:</p>
-<ul class="sab">
-<li>Insistir en que todo pase por los canales correspondientes.</li>
-<li>Pronunciar discursos, lo más largos y frecuentes posible.</li>
-<li>Derivar todo a comisiones.</li>
-<li>Convocar reuniones cuando hay trabajo más urgente que hacer.</li>
-<li>Asignar las tareas importantes a los trabajadores menos eficientes.</li>
-<li>Ser amable con los ineficientes, promoverlos sin mérito y discriminar a los eficientes.</li>
-</ul>
-<p>El manual está desclasificado. Lo inquietante no es que exista, sino que muchas organizaciones lo aplican sin haberlo leído.</p>
-<h3>Cipolla y el bandido</h3>
-<p>Carlo Cipolla clasificó a las personas según el efecto de sus actos: el inteligente gana y hace ganar; el incauto pierde para que otro gane; el bandido gana haciendo perder; el estúpido hace perder a otros sin ganar nada. El Príncipe epistémico aspira a bandido. El riesgo, como advierte Cipolla, es que el estúpido abunda más de lo que uno cree, y a veces es el que organiza la charla.</p>
-<h3>Peter, Janis, Dunning y Kruger</h3>
-<p>Laurence Peter explicó cómo cada uno asciende hasta su nivel de incompetencia. Irving Janis describió el pensamiento grupal: grupos que deciden mal porque nadie se anima a disentir. Dunning y Kruger mostraron que quien menos sabe de un tema suele sobreestimar lo que sabe. Combinados, son la receta del Príncipe: promover hasta la incompetencia, silenciar el disenso y darle el micrófono a quien más seguro está.</p>
+<figure>
+<svg viewBox="0 0 760 360" role="img" aria-label="Pirámide invertida en equilibrio sobre la cabeza de un expositor pequeño que transpira; arriba de todo, veinte directores; el Príncipe la mira satisfecho desde un costado">
+  <rect width="760" height="360" rx="22" fill="#6a4c93"/>
+  <polygon points="190,40 570,40 380,250" fill="#f2b705"/>
+  <line x1="245" y1="100" x2="515" y2="100" stroke="#6a4c93" stroke-width="4"/>
+  <line x1="300" y1="160" x2="460" y2="160" stroke="#6a4c93" stroke-width="4"/>
+  <g font-family="Bricolage Grotesque,sans-serif" font-weight="800" fill="#1d2430" text-anchor="middle">
+    <text x="380" y="78" font-size="18">20 directores con experiencia</text>
+    <text x="380" y="138" font-size="16">3 asesoras externas</text>
+    <text x="380" y="200" font-size="14">1 expositor</text>
+  </g>
+  <circle cx="380" cy="266" r="16" fill="#ffffff"/>
+  <path d="M362 330 Q364 290 380 286 Q396 290 398 330 Z" fill="#ffffff"/>
+  <path d="M364 294 L350 262 M396 294 L410 262" stroke="#ffffff" stroke-width="7" stroke-linecap="round"/>
+  <g fill="#e6f2f1"><path d="M400 262 q4 6 0 9 q-4 -3 0 -9 Z"/><path d="M357 256 q4 6 0 9 q-4 -3 0 -9 Z"/></g>
+  <circle cx="640" cy="230" r="20" fill="#1d2430"/>
+  <path d="M616 330 Q618 270 640 264 Q662 270 664 330 Z" fill="#1d2430"/>
+  <path d="M622 212 L627 196 L634 207 L640 192 L646 207 L653 196 L658 212 Z" fill="#f2b705"/>
+  <text x="640" y="176" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#ffffff">"Estable."</text>
+  <text x="120" y="320" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#f2b705">Arquitectura institucional</text>
+  <text x="120" y="340" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="15" fill="#f2b705">de vanguardia</text>
+</svg>
+<figcaption>Todo el saber de la organización, en equilibrio sobre una sola persona. ¿Qué podría salir mal?</figcaption>
+</figure>
 
-<section class="cierre">
-<h2 style="margin-top:0">Contraindicaciones</h2>
-<p>Todo veneno tiene un efecto adverso, y este también. Una organización sin capital epistémico funciona perfectamente mientras no pase nada. El día que aparece un problema complejo de verdad, nadie sabe a quién consultar. Tampoco el Príncipe, que eliminó a los que sabían y se quedó solo con los que asentían.</p>
-<p>Ahí se cumple Maquiavelo al pie de la letra: el señor que no es sabio por sí mismo no puede ser bien aconsejado, porque ya no le queda nadie que sepa aconsejarlo.</p>
-<p>Por eso este manual se lee al revés. Cada artículo describe una práctica que ya existe, y el que la reconoce en su propia oficina tiene, por lo menos, el nombre exacto de lo que le está pasando.</p>
-<blockquote class="cita">Una institución puede conservar intacto su organigrama, su presupuesto y su cantidad de empleados, y aun así haber perdido la capacidad de reconocer dónde está el conocimiento que necesita para funcionar.<small>Paráfrasis de la conclusión del trabajo original, que el Príncipe no leyó.</small></blockquote>
-</section>
+<h2>No es un invento suyo</h2>
+<p>En 1944 la OSS, antecesora de la CIA, escribió un manual para sabotear organizaciones enemigas desde adentro: derivar todo a comisiones, dar discursos largos, convocar reuniones cuando hay trabajo urgente y promover a los ineficientes. Está desclasificado. Lo gracioso es que muchas oficinas lo aplican sin haberlo leído.</p>
+<p>Cipolla, por su parte, distinguía al bandido, que gana haciendo perder a otros, del estúpido, que hace perder a todos sin ganar nada. El Príncipe aspira a bandido. Suele terminar en la otra categoría.</p>
 
-<h2>Fuentes</h2>
-<ul class="fuentes">
-<li>Maquiavelo, N. <em>El Príncipe</em> (1532), caps. XVII, XXII y XXIII.</li>
-<li>Greene, R. <em>Las 48 leyes del poder</em> (1998), ley 1.</li>
-<li>Office of Strategic Services. <em>Simple Sabotage Field Manual</em> (1944), desclasificado.</li>
-<li>Cipolla, C. M. <em>Allegro ma non troppo</em> (1988), "Las leyes fundamentales de la estupidez humana".</li>
-<li>Peter, L. J. y Hull, R. <em>El principio de Peter</em> (1969).</li>
-<li>Janis, I. L. <em>Victims of Groupthink</em> (1972).</li>
-<li>Kruger, J. y Dunning, D. "Unskilled and Unaware of It", <em>Journal of Personality and Social Psychology</em> (1999).</li>
-<li>Fricker, M. <em>Epistemic Injustice</em> (2007).</li>
-<li>Zagzebski, L. <em>Epistemic Authority</em> (2012).</li>
-<li>Strathern, M. "Improving Ratings: Audit in the British University System" (1997), formulación difundida de la ley de Goodhart.</li>
-<li><em>Capital epistémico y jerarquía del conocimiento en las organizaciones</em>, texto de base de esta inversión.</li>
-</ul>
+<div class="aviso">
+<h2>Contraindicaciones</h2>
+<p>Funciona de maravilla mientras no pase nada. El día que aparece un problema serio, nadie sabe a quién consultar. Ni siquiera el Príncipe, que se quedó solo con los que asentían.</p>
+<blockquote class="cita">Un príncipe que no es sabio por sí mismo no puede ser bien aconsejado.<small>Maquiavelo, El Príncipe, cap. XXIII. Y si además echó a los consejeros, menos.</small></blockquote>
+<p><strong>Si reconoció su oficina en este manual, no se preocupe: al menos ya sabe cómo se llama lo que le pasa.</strong></p>
+</div>
+
+<p class="fuentes">Fuentes: Maquiavelo, <em>El Príncipe</em> (1532) · OSS, <em>Simple Sabotage Field Manual</em> (1944) · Cipolla, <em>Las leyes fundamentales de la estupidez humana</em> · Fricker, <em>Epistemic Injustice</em> (2007) · Ley de Goodhart · y el trabajo original, que el Príncipe nunca leyó.</p>
 
 </main>
 </body>
 </html>
+
